@@ -16,13 +16,38 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Leckerli+One|Pacifico|Satisfy">
 		<link rel="stylesheet" href="assets/fontawesome-free-5.3.1-web/css/all.css">
+		
+		<!--really want to try and minimize as much JS as possible and rely more on CSS-->
+		<!--also really lazy to create .js file lol-->
 
+		<script>
+			
+			function changeColor(){
+
+				if (document.getElementById("slider-id").checked == true) { 
+				document.body.style.backgroundColor = '#090909';
+			 } else {
+			 	document.body.style.backgroundColor = '#f9f9f9';
+			 }
+			}
+
+		</script>
 
 	<head>
 
 	<body>
 
 	<div class="container">
+		<div id="toggle-container">
+			<!--<i class="far fa-sun"></i>-->
+			<label class="switch">
+  				<input type="checkbox" id="slider-id" onClick="changeColor()">
+  				<span class="slider round">
+  					<i class="far fa-moon" style="color: #f9f9f9;"></i><i class="far fa-sun" style="color: #090909;"></i>
+  				</span>
+			</label>
+			<!--.<i class="far fa-moon"></i>-->
+		</div>
 		<section id="title">
 			<h1>Constantina "Connie" Scoullis</h1>
 		</section>
@@ -56,6 +81,7 @@
 				<a href=""><i class="fab fa-twitter-square"></i></a>
 			</div>
 		</section>
+
 	</div>
 
 	</body>

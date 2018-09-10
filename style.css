@@ -3,9 +3,111 @@
 	text-align: left;
 	display: block;
 }
-.container{
-	padding: 100px;
+
+#more-about{
+	margin: 20px 0;
 }
+.container{
+	padding: 100px 100px 100px 200px;
+}
+
+#toggle-container{
+	width: 100%;
+	text-align: right;
+	float: right;
+	display:inline-block;
+
+}
+
+.switch i {
+	font-size: 22px;
+	margin:6px;
+	vertical-align: middle;
+	display: inline-block;
+
+}
+
+.switch i .fa-moon{
+	float: left;
+	margin-left: -8px;
+	font-color: #f9f9f9;
+	position:relative;
+	z-index: 9999;
+}
+
+.switch i .fa-sun{
+	float:right;
+	margin-right: -4px;
+
+}
+
+/*slider stuff*/
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #090909;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #090909;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(36px);
+  -ms-transform: translateX(36px);
+  transform: translateX(36px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*end slider stuff*/
+
+
+
+
+
+
+
+
 
 #title h1{
 	font-family: 'Pacifico';
@@ -53,3 +155,4 @@ button{
 	font-size: 20px;
 	font-family: 'Montserrat';
 }
+
